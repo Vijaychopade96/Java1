@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create New Account</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+            width: 50%;
+			margin: 0 auto;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		
+
+        input[type=text]{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        border-radius: 3px;
+        }
+	
+        button[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        button[type=submit]:hover {
+        background-color: #45a049;
+        }
+		.home-button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+
+		.home-button:hover {
+			background-color: #555;
+		}
+
+	</style>
+</head>
+<body><br><br>
+    <center><h1>Add New Account</h1></center><br>
+	<form method="post" action="addAccount">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		
+		<label for="account">Account Number</label>
+		<input type="text" id="account" name="account" placeholder="Enter your account number" required>
+		
+		<label for="balance">Initial Balance</label>
+		<input type="text" id="balance" name="balance" placeholder="Enter your initial balance" required>
+		
+		<a href="index.html"><button type="submit">Create Account</button></a>
+		<br>
+		<a href="index.html" class="home-button">Home</a>
+	</form>
+</body>
+</html>

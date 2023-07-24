@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Portal</title>
+	<style>
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 20px;
+		}
+		nav button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+		}
+		nav button:hover {
+			background-color: #3e8e41;
+		}
+        form {
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    input[type=text]{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 20px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        border-radius: 3px;
+    }
+
+    button[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type=submit]:hover {
+        background-color: #45a049;
+    }
+	</style>
+</head>
+<body>
+	<nav>
+    <h1><img src="img/istockphoto-1305651805-170667a.jpg" alt="" height="40"> &nbsp;&nbsp;Nikhil's Bank Application</h1>
+    <div>
+			<a href="trial.html"><button>ADD NEW ACCOUNT</button></a>
+			<a href="display"><button>DISPLAY ALL ACCOUNTS</button></a>
+		</div>
+	</nav><br><br><br>
+    <center>
+        <form method="post" action="mainPage">
+            <h2>Transaction Menu</h2>
+            <label for="account"><b>Account No.</b></label>
+            <input type="text" name="account" placeholder="Enter incorrect Account no." required>
+            
+            <label for="amount"><b>Amount</b></label>
+            <input type="text" name="amount" placeholder="Enter amount value" required>
+            
+            <a href=""><button type="submit" name="deposite">Deposite Money</button></a> &nbsp;&nbsp;
+            <a href="index.html"><button type="submit" name="withdraw">Withdraw Money</button></a>
+        </form>
+    </center>
+</body>
+</html>

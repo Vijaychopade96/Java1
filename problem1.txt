@@ -1,0 +1,4 @@
+decide customer (creditlimit)
+below 20000(silver)
+between 20000&50000(gold)
+above50000(platinum)
